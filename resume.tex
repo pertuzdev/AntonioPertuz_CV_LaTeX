@@ -1,0 +1,61 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-red}
+
+\setbool{acvSectionColorHighlight}{true}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+
+\photo[rectangle,edge,right]{./profile.jpg}
+\name{Antonio}{Pertuz}
+\position{Software Engineer{\enskip\cdotp\enskip}Web \& App developer}
+\address{URB Nuevo Lourdes Poniente II senda Las Palmeras Pol 46 casa 26}
+
+\mobile{+503 74963874}
+\email{antonio.pertuz@outlook.com}
+
+\github{pertuzdev}
+\linkedin{antonio-pertuz}
+
+\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Header
+
+\makecvheader[C]
+
+% Footer
+\makecvfooter
+  {\today}
+  {Antonio Pertuz~~~·~~~CV}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%-------------------------------------------------------------------------------
+\input{src/summary.tex}
+\input{src/skills.tex}
+\input{src/experience.tex}
+\input{src/education.tex}
+
+%-------------------------------------------------------------------------------
+\end{document}
